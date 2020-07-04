@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">        
+        <link rel="shortcut icon" href="img/favicon.png">
+        <title>Dashboard</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Oswald:400,700&display=swap" rel="stylesheet"> 
+        <link href="css/plugins.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <link href="css/all.min.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+        <link href="css/responsive.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" rel="stylesheet">
+        <link href="https://cdn.datatables.net/v/dt/dt-1.10.16/sl-1.2.5/datatables.min.css">
+        <link href="https://gyrocode.github.io/jquery-datatables-checkboxes/1.2.10/css/dataTables.checkboxes.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+    </head>
+    <body>
+        <sidebar>
+            <a class="logo" href="index.html"><img src="img/logo.jpg" alt="Logo"></a>
+            <nav class="main_menu">
+                <ul id="menu">
+                    <li><a href="" class="current"><i class="fa fa-home"></i></a></li>
+                    <li><a href=""><i class="fa fa-pie-chart"></i></a></li>
+                    <li><a href=""><i class="fa fa-cog"></i></a></li>
+                    <li><a href=""><i class="fa fa-info"></i></a></li>
+                    <li><a href=""><i class="fa fa-question"></i></a></li>
+                    <li class='user'><a href=""><i class="fa fa-user"></i></a></li>
+                </ul>
+            </nav>
+        </sidebar>
+        <section class="content_area">
+            <header class="header_area">
+                <section class="top_header_area">
+                    <div class="inner_header">
+                        <div class="social_area">
+                           Dashboard
+                        </div>
+                        <div class="search_area">
+                            <form action="">
+                                <i class="fa fa-search"></i>
+                                <input type="text" placeholder="Search...">
+                            </form>
+                        </div>
+                        <div class="pull-right">
+                            <i class="fa fa-reorder"></i>
+                        </div>
+                    </div>
+                </section>
+            </header>
+
+            <section class="tab_area">
+                <div class="add_tab box">
+                    <i class="fa fa-plus"></i>
+                    <p> Add Project </p>
+                </div>
+                <div class="tab_bar owl-carousel owl-theme">
+                    <div class="causualmanagement box actives">
+                        <h3>Causual Management</h3>
+                        <p>Disruptive Portfolio</p>
+                        <span>03-21-2020</span>
+                    </div><div class="causualmanagement box">
+                        <h3>Causual Management</h3>
+                        <p>Disruptive Portfolio</p>
+                        <span>03-21-2020</span>
+                    </div><div class="causualmanagement box">
+                        <h3>Causual Management</h3>
+                        <p>Disruptive Portfolio</p>
+                        <span>03-21-2020</span>
+                    </div><div class="causualmanagement box">
+                        <h3>Causual Management</h3>
+                        <p>Disruptive Portfolio</p>
+                        <span>03-21-2020</span>
+                    </div><div class="causualmanagement box">
+                        <h3>Causual Management</h3>
+                        <p>Disruptive Portfolio</p>
+                        <span>03-21-2020</span>
+                    </div><div class="causualmanagement box">
+                        <h3>Causual Management</h3>
+                        <p>Disruptive Portfolio</p>
+                        <span>03-21-2020</span>
+                    </div><div class="causualmanagement box">
+                        <h3>Causual Management</h3>
+                        <p>Disruptive Portfolio</p>
+                        <span>03-21-2020</span>
+                    </div><div class="causualmanagement box">
+                        <h3>Causual Management</h3>
+                        <p>Disruptive Portfolio</p>
+                        <span>03-21-2020</span>
+                    </div><div class="causualmanagement box">
+                        <h3>Causual Management</h3>
+                        <p>Disruptive Portfolio</p>
+                        <span>03-21-2020</span>
+                    </div>
+                </div>
+                <div class="tab_content">
+                    <div class="causualmanagement">
+                        <div class="col-md-6">
+                            <div class="big-box">
+                                <div class="sub-head">
+                                    <div class="title">
+                                        <h3>Causual Management</h3>
+                                        <p>Disruptive Portfolio</p>
+                                    </div>
+                                    <div class="sub-head-icon">
+                                        <i class="fa fa-sort-amount-desc"></i>
+                                        <i class="fa fa-ellipsis-v"></i>
+                                    </div>
+                                    
+                                </div>
+                                <div class="graph_area">
+                                    <div class="label label-success">Management Report Chart</div>
+                                    <div id="donut-example" class="morris-donut-inverse"> </div>
+                                    <div class="label">JAN 20</div>
+                                </div>
+                                <i class="fa fa-refresh"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="big-box mr-25">
+                                <div class="sub-head">
+                                    <div class="title">
+                                        <h3>Created</h3>
+                                        <p>JAN 20</p>
+                                    </div>
+                                    <div class="sub-head-icon">
+                                        <i class="fa fa-sort-amount-desc"></i>
+                                        <i class="fa fa-ellipsis-v"></i>
+                                    </div>
+                                    
+                                </div>
+                                <table id="example" class="display mt-20" cellspacing="0" width="100%">
+                                    <thead>
+                                       <tr>
+                                          <th></th>
+                                          <th>Sr no</th>
+                                          <th>Application id</th>
+                                          <th>Created by</th>
+                                          <th>Payment</th>
+                                          <th>Action</th>
+                                       </tr>
+                                    </thead>
+                                 </table>
+                                 <i class="fa fa-refresh"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+         <script src="https://use.fontawesome.com/1b502a9358.js"></script>
+
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+          <script src="js/plugins.js"></script>
+          <script src="js/main.js"></script>
+          <script src="https://cdn.datatables.net/v/dt/dt-1.10.16/sl-1.2.5/datatables.min.js"></script>
+          <script src="https://gyrocode.github.io/jquery-datatables-checkboxes/1.2.10/js/dataTables.checkboxes.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+          
+          <script>
+              // donut chart
+
+                var colorDanger = "#FF1744";
+                Morris.Donut({
+                element: 'donut-example',
+                resize: true,
+                colors: [
+                    '#292929',
+                    '#f27113',
+                ],
+                //labelColor:"#cccccc", // text color
+                //backgroundColor: '#333333', // border color
+                data: [
+                    {label:"Created", value:300000},
+                    {label:"Processed", value:70000},
+                ]
+                });
+          </script>
+    </body>
+</html>

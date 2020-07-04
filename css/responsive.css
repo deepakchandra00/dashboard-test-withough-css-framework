@@ -1,0 +1,50 @@
+/*
+Tablet layout
+*/
+@media only screen and (min-width: 200px) and (max-width: 991px){
+    .content{width: 98%;}
+    sidebar{
+        display: none;
+    }
+    body.active sidebar{
+        display: block;
+    }
+    body.active .content_area{
+        margin-left: 80px;
+    }
+    .content_area {
+        margin-left: 0px;
+    }
+    .add_tab{
+        width: calc(100% - 120px) !important;
+    }
+    .tab_bar {
+        width: calc(100% - 45px) !important;
+        margin-top: 15px;
+    }
+    .box {
+        width: calc(100% - 75px);
+    }
+    .col-md-6 {
+        width: calc(100% - 30px);
+        float: left;
+        margin-top: 25px;
+    }
+    .mr-25 {
+        margin-right: 0px;
+    }
+    .pull-right{
+        display: block;
+    }
+    .sidebar{display: none}  
+}
+
+/*
+Mobile layout
+*/
+@media only screen and (min-width: 200px) and (max-width: 767px){
+    .top_header_area .social_area {width: 100%;}
+    .top_header_area .social_area ul {text-align: center;}   
+    .top_header_area .search_area {display: none;} 
+    .slicknav_menu{display: block; background: #97455f;} 
+}
